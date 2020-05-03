@@ -1,0 +1,50 @@
+.my-button {
+  display: inline-block;
+  padding: 10px 30px;
+  font-size: 21px;
+  text-decoration: none;
+  border-radius: 100px;
+  border: 1px solid #b590ca;;
+  cursor: pointer;
+  background-color: #400082;
+  color: white;
+}
+
+.my-button:hover {
+  background-color: white;
+  border: 1px solid #844685;
+  color: #844685;
+  transition: background-color 0.8s, border 0.5s, color 0.2s;
+}
+
+.my-info {
+  background-color: #400082;
+  height: auto;
+  width: 100%;
+  margin-top: -7px;
+  padding-left: 20px;
+  padding-right: 20px;
+  overflow: hidden;
+}
+
+.my-content {
+  font-size: 40px;
+  text-align: center;
+  color: white;
+}
+
+.my-content:after {
+  display: block;
+  height: 2px;
+  background-color: #30a5ff;
+  content: " ";
+  width: 100px;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+.social-logo {
+  height: 100px;
+  width: 100px;
+  cursor: pointer;
+}

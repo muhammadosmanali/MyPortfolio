@@ -1,0 +1,36 @@
+<div>
+  <svg class="my-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+    <path
+      fill="#400082"
+      fill-opacity="1"
+      d="M0,256L1440,128L1440,320L0,320Z"
+    ></path>
+  </svg>
+</div>
+<div class="my-info">
+  <div class="my-content" data-aos="fade-up">PROJECTS</div>
+  <br />
+  <br />
+
+  <div class="columns is-multiline">
+    <div class="column" *ngFor="let item of arr">
+      <div class="my-card" data-aos="flip-left">
+        <div>
+          <img
+            class="my-card-image"
+            src="https://media.istockphoto.com/photos/heart-shape-paper-book-on-the-beach-picture-id817147678?k=6&m=817147678&s=612x612&w=0&h=vNJJJoRPaieom61bMwQxaGtOImMhJsoxz1OIgLZNOEw="
+          />
+        </div>
+        <div class="my-card-text">
+          <h2>{{ item }}</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, Ducimus, repudiandae
+            temporibus omnis illum maxime quod deserunt eligendi dolor
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <br /><br /><br /><br /><br /><br /><br /><br /><br />
+</div>

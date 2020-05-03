@@ -1,0 +1,179 @@
+header {
+  /* background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.7)), url("../../../assets/images/background.svg"); */
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  background-attachment: fixed;
+  color: #400082;
+}
+
+.res-main-nav {
+  display: none;
+}
+
+.main-nav {
+  float: right;
+  list-style-type: none;
+  margin-top: 20px;
+  margin-right: 50px;
+  position: absolute;
+  top: 0;
+}
+
+.main-nav li {
+  display: inline-block;
+  margin-left: 40px;
+  cursor: pointer;
+  font-size: 25px;
+  letter-spacing: 1px;
+  font-weight: bold;
+}
+
+.logo:hover {
+  border-bottom: none !important;
+  color: #844685 !important;
+}
+
+.main-nav li:hover {
+  border-bottom: 2px solid #844685;
+  color: #844685;
+  transition: border-bottom 0.5s, color 0.3s;
+}
+
+.svg {
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  background-color: rgba(63, 60, 63, 0.068);
+  filter: grayscale(10%);
+}
+
+.logo {
+  margin-top: 20px;
+  margin-left: 20px;
+  font-size: 32px !important;
+  font-weight: bold;
+}
+
+.hero-text-box {
+  position: absolute;
+  width: 1140px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.hero-text-box h1 {
+  font-size: 60px;
+}
+
+/* Big tablet to 1200px (width smaller than the 1140px row) */
+@media only screen and (max-width: 1200px) {
+  .hero-text-box {
+    width: 100%;
+    padding: 0 2%;
+  }
+}
+
+/* small tablet to big tablet: from 768-1023px */
+@media only screen and (max-width: 1023px) {
+}
+
+@media only screen and (max-width: 983px) {
+  .hamburger {
+    position: absolute;
+    cursor: pointer;
+    right: 5%;
+    top: 6%;
+    transform: translate(-5%, -6%);
+    z-index: 2;
+  }
+
+  .line {
+    width: 30px;
+    height: 3px;
+    background-color: #400082;
+    margin: 5px;
+  }
+
+  .main-nav {
+    float: left;
+    margin-top: 35px;
+    margin-left: 25px;
+  }
+
+  .nav-links {
+    display: none !important;
+  }
+
+  .nav-links:hover {
+    border-bottom: none !important;
+    color: white !important;
+  }
+
+  .res-main-nav-mod {
+    background-color: #400082;
+    display: block;
+    position: absolute;
+    cursor: pointer;
+    right: 3%;
+    top: 12%;
+    transform: translate(-3%, -12%);
+    z-index: 2;
+    padding: 10px;
+    border-radius: 10px;
+  }
+
+  .res-nav-link {
+    color: white;
+    font-size: 22px;
+    padding: 10px;
+    border-radius: 10px;
+  }
+
+  .res-nav-link:hover {
+    background-color: white;
+    color: #844685;
+  }
+
+  /* .open {
+    display: block !important;
+  } */
+
+  .main-nav li a:link,
+  .main-nav li a:visited {
+    display: block;
+    border: 0;
+    padding: 10px 0;
+    font-size: 100%;
+  }
+
+  .logo {
+    margin-top: 5px;
+    margin-left: 15px !important;
+  }
+}
+
+/* small phones to small tablet: form 481-767px */
+@media only screen and (max-width: 767px) {
+  .hero-text-box {
+    padding: 0 4%;
+  }
+
+  .res-main-nav-mod {
+    padding: 7px;
+  }
+
+  .res-nav-link {
+    padding: 7px;
+    font-size: 21px;
+  }
+}
+
+/* small phones: from 0-480px*/
+@media only screen and (max-width: 480px) {
+  .logo {
+    font-size: 40px !important;
+  }
+}
