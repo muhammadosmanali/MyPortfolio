@@ -1,0 +1,111 @@
+<div class="svg">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+    <path
+      fill="#ffffff"
+      fill-opacity="1"
+      d="M0,160L1440,256L1440,320L0,320Z"
+    ></path>
+  </svg>
+</div>
+
+<div class="my-info" id="contact">
+  <div class="my-content" data-aos="fade-up">CONTACT FORM</div>
+  <br />
+  <br />
+  <form class="form" #contactForm="ngForm" (submit)="onSubmit(contactForm)">
+    <div class="field is-horizontal">
+      <div class="field-body">
+        <div class="field">
+          <p class="control is-expanded">
+            <input
+              class="input is-medium"
+              type="text"
+              placeholder="First Name"
+              name="firstName"
+              ngModel
+              required
+              #firstName="ngModel"
+            />
+          </p>
+          <p class="help is-danger" *ngIf="firstName.invalid">
+            This field is required
+          </p>
+        </div>
+        <div class="field">
+          <p class="control is-expanded">
+            <input
+              class="input is-medium"
+              type="text"
+              placeholder="Last Name"
+              name="lastName"
+              ngModel
+              required
+              #lastName="ngModel"
+            />
+          </p>
+          <p class="help is-danger" *ngIf="lastName.invalid">
+            This field is required
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <br />
+    <div class="field is-horizontal">
+      <div class="field-body">
+        <div class="field">
+          <div class="control">
+            <input
+              class="input is-danger is-medium"
+              type="text"
+              placeholder="Enter Email"
+              name="email"
+              ngModel
+              email
+              required
+              #email="ngModel"
+            />
+          </div>
+          <p class="help is-danger" *ngIf="email.invalid">
+            This field is required
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <br />
+
+    <div class="field is-horizontal">
+      <div class="field-body">
+        <div class="field">
+          <div class="control">
+            <textarea
+              class="textarea"
+              placeholder="Your Message"
+              name="message"
+              ngModel
+              required
+              #message="ngModel"
+            ></textarea>
+          </div>
+          <p class="help is-danger" *ngIf="message.invalid">
+            This field is required
+          </p>
+        </div>
+      </div>
+    </div>
+    <br />
+    <div class="field is-horizontal">
+      <div class="field-body">
+        <div class="field">
+          <div class="control">
+            <button class="my-button" [disabled]="contactForm.invalid">
+              Send Message
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </form>
+  <br /><br /><br /><br /><br /><br /><br /><br />
+</div>

@@ -1,0 +1,22 @@
+.svg {
+  margin-top: -258px;
+}
+
+.my-info {
+  background-color: white !important;
+}
+
+.my-content {
+  color: #400082 !important;
+}
+
+.form {
+  text-align: center;
+  margin-right: 10%;
+  margin-left: 10%;
+}
+
+.input,
+.textarea{
+  border-color: #400082 !important;
+}

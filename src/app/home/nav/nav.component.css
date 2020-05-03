@@ -29,12 +29,17 @@ header {
   font-weight: bold;
 }
 
+.main-nav li a {
+  text-decoration: none;
+  color: #400082;
+}
+
 .logo:hover {
   border-bottom: none !important;
   color: #844685 !important;
 }
 
-.main-nav li:hover {
+.main-nav li a:hover {
   border-bottom: 2px solid #844685;
   color: #844685;
   transition: border-bottom 0.5s, color 0.3s;
@@ -65,7 +70,8 @@ header {
 }
 
 .hero-text-box h1 {
-  font-size: 60px;
+  font-size: 70px;
+  font-weight: bold;
 }
 
 /* Big tablet to 1200px (width smaller than the 1140px row) */
@@ -135,6 +141,15 @@ header {
   .res-nav-link:hover {
     background-color: white;
     color: #844685;
+  }
+
+  .res-main-nav a:hover {
+    color: #844685;
+  }
+
+  .res-nav-link a {
+    text-decoration: none;
+    color: white;
   }
 
   /* .open {

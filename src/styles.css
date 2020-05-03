@@ -1,6 +1,10 @@
 /*---------------------------------*/
 /*Basic Setup*/
 /*---------------------------------*/
+@font-face {
+  font-family: 'Electrolize';
+  src: url('./assets/fonts/Electrolize-Regular.ttf');
+}
 
 * {
   margin: 0;
@@ -13,12 +17,12 @@ html,
 body {
   background-color:  #fff;
   color: #555;
-  font-family: 'Lato', 'Arial', sans-serif;
   font-size: 20px;
   font-weight: 300;
   text-rendering: optimizeLegibility;
   overflow-x: hidden;
   overflow: hidden;
+  scroll-behavior: smooth;
 }
 
 .clearfix {zoom: 1}
@@ -29,3 +33,5 @@ body {
   height: 0;
   visibility: hidden;
 }
+
+

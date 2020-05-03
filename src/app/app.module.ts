@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -9,6 +10,8 @@ import { NavComponent } from './home/nav/nav.component';
 import { ProjectsComponent } from './home/projects/projects.component';
 import { SocialsComponent } from './home/socials/socials.component';
 import { SkillsComponent } from './home/skills/skills.component';
+import { ContactFormComponent } from './home/contact-form/contact-form.component';
+import { FooterComponent } from './home/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -18,13 +21,11 @@ import { SkillsComponent } from './home/skills/skills.component';
     ProjectsComponent,
     SocialsComponent,
     SkillsComponent,
+    ContactFormComponent,
+    FooterComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    SharedModule
-  ],
+  imports: [BrowserModule, AppRoutingModule, SharedModule, FormsModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
