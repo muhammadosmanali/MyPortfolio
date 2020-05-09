@@ -6,11 +6,20 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./projects.component.css', '../common.css']
 })
 export class ProjectsComponent implements OnInit {
-  arr = ['Post One', 'Post Two', 'Post Three', 'Post Four', 'Post Five', 'Post Six'];
+  arr = ['Web Scraping'];
+  isModalActive: boolean = false;
+
   constructor() { }
 
   ngOnInit(): void {
+  }
 
+  onDetail() {
+    this.isModalActive = !this.isModalActive;
+  }
+
+  onModalClose() {
+    this.isModalActive = false;
   }
 
 }

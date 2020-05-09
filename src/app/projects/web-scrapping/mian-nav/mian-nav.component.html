@@ -1,0 +1,49 @@
+<mat-sidenav-container class="sidenav-container">
+  <mat-sidenav
+    #drawer
+    class="sidenav"
+    fixedInViewport="false"
+    [ngClass]="{ hidden: !(isHandset$ | async) }"
+    [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
+    [mode]="(isHandset$ | async) ? 'over' : 'side'"
+    [opened]="(isHandset$ | async) === false"
+  >
+    <mat-toolbar color="primary">
+      <button
+        type="button"
+        aria-label="Toggle sidenav"
+        mat-icon-button
+        (click)="drawer.toggle()"
+        *ngIf="isHandset$ | async"
+      >
+        <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
+      </button>
+      <span routerLink="/web-scrapping" style="cursor: pointer;">WEB SCRAPING</span>
+    </mat-toolbar>
+    <br />
+    <mat-nav-list>
+      <a mat-list-item style="color: indigo;" routerLink="udemy-coupons">Coupons</a>
+      <a mat-list-item style="color: indigo;" routerLink="giveaways">Giveaways</a>
+      <a mat-list-item style="color: indigo;" routerLink="/">Back</a>
+    </mat-nav-list>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <mat-toolbar color="primary">
+      <button
+        type="button"
+        aria-label="Toggle sidenav"
+        mat-icon-button
+        (click)="drawer.toggle()"
+        *ngIf="isHandset$ | async"
+      >
+        <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
+      </button>
+      <span routerLink="/web-scrapping" style="cursor: pointer;">WEB SCRAPING</span>
+      <span class="spacer" ></span>
+      <span class="menu" *ngIf="!(isHandset$ | async)" routerLink="udemy-coupons">Coupons</span>
+      <span class="menu" *ngIf="!(isHandset$ | async)" routerLink="giveaways">Giveaways</span>
+      <span class="menu" *ngIf="!(isHandset$ | async)" routerLink="/">Back</span>
+    </mat-toolbar>
+    <ng-content></ng-content>
+  </mat-sidenav-content>
+</mat-sidenav-container>

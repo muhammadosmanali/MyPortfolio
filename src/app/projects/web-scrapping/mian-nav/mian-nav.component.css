@@ -1,0 +1,49 @@
+.sidenav-container {
+  height: 100vh !important;
+}
+
+.sidenav {
+  width: 250px;
+  background-image: linear-gradient(rgba(76, 0, 130, 0.438), white) ;
+}
+
+.sidenav .mat-toolbar {
+  background: inherit;
+}
+
+.mat-toolbar.mat-primary {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.mat-toolbar {
+  background-color: indigo !important;
+  color: white !important;
+}
+
+.hidden {
+  display: none;
+}
+
+.icon {
+  padding: 0 14px;
+}
+
+.spacer {
+  flex: 1 1 auto;
+}
+
+.menu {
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.menu:hover {
+  color: rgb(210, 146, 235);
+  transition: color 0.5s;
+}
+
+.mat-list-item {
+  font-weight: bold;
+}

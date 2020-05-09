@@ -1,0 +1,38 @@
+<mat-list>
+  <div mat-subheader>DETAIL</div>
+  <mat-list-item>
+    <mat-icon mat-list-icon>arrow_forward_ios</mat-icon>
+    <div mat-line>{{data[0].heading}}</div>
+  </mat-list-item>
+
+  <mat-list-item>
+    <mat-icon mat-list-icon>language</mat-icon>
+    <div mat-line> {{data[0].language}} </div>
+  </mat-list-item>
+
+  <mat-list-item>
+    <mat-icon mat-list-icon>today</mat-icon>
+    <div mat-line> {{data[0].day}} </div>
+  </mat-list-item>
+
+  <mat-list-item>
+    <mat-icon mat-list-icon>category</mat-icon>
+    <div mat-line> {{data[0].category}} </div>
+  </mat-list-item>
+
+  <mat-list-item>
+    <mat-icon mat-list-icon>description</mat-icon>
+    <div mat-line title="{{data[0].description}}"> {{data[0].description}} </div>
+  </mat-list-item>
+  <br><br>
+  <mat-list-item>
+    <mat-icon mat-list-icon>image</mat-icon>
+    <div mat-line style="text-align: center;"> <img src="{{data[0].imageUrl}}"> </div>
+  </mat-list-item>
+  <br><br><br>
+  <mat-divider></mat-divider>
+  <mat-list-item>
+    <mat-icon mat-list-icon>close</mat-icon>
+    <div mat-line class="btn-mat" (click)="openLink($event)">Close</div>
+  </mat-list-item>
+</mat-list>

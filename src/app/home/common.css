@@ -4,9 +4,21 @@
   font-size: 21px;
   text-decoration: none;
   border-radius: 100px;
-  border: 1px solid #b590ca;;
+  border: 1px solid #b590ca;
   cursor: pointer;
   background-color: #400082;
+  color: white;
+}
+
+.my-button-secondary {
+  display: inline-block;
+  padding: 10px 30px;
+  font-size: 21px;
+  text-decoration: none;
+  border-radius: 100px;
+  border: 1px solid #b590ca;
+  cursor: pointer;
+  background-color: indianred;
   color: white;
 }
 
@@ -14,6 +26,13 @@
   background-color: white;
   border: 1px solid #844685;
   color: #844685;
+  transition: background-color 0.8s, border 0.5s, color 0.2s;
+}
+
+.my-button-secondary:hover {
+  background-color: white;
+  border: 1px solid #844685;
+  color: indianred;
   transition: background-color 0.8s, border 0.5s, color 0.2s;
 }
 

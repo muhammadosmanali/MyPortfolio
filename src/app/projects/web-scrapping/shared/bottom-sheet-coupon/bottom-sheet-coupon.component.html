@@ -1,0 +1,19 @@
+<mat-list>
+  <div mat-subheader>{{data.title}}</div>
+  <mat-list-item>
+    <mat-icon mat-list-icon>insert_link</mat-icon>
+    <div mat-line><a href="{{data.link}}" target="_blank">{{data.link}}</a></div>
+  </mat-list-item>
+
+  <mat-list-item *ngIf="data.description">
+    <mat-icon mat-list-icon>description</mat-icon>
+    <div mat-line *ngFor="let item of data.description">{{item}}</div>
+  </mat-list-item>
+
+  <br><br><br>
+  <mat-divider></mat-divider>
+  <mat-list-item>
+    <mat-icon mat-list-icon>close</mat-icon>
+    <div mat-line style="cursor: pointer;" (click)="openLink($event)">Close</div>
+  </mat-list-item>
+</mat-list>

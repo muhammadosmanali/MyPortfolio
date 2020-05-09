@@ -1,0 +1,24 @@
+<mat-list>
+  <div mat-subheader>DETAIL</div>
+  <mat-list-item>
+    <mat-icon mat-list-icon>arrow_forward_ios</mat-icon>
+    <div mat-line>{{data[0].name}}</div>
+  </mat-list-item>
+
+  <mat-list-item>
+    <mat-icon mat-list-icon>category</mat-icon>
+    <div mat-line> {{data[0].pcOrNot == "" ? 'Book' : 'Software'}} </div>
+  </mat-list-item>
+
+  <br><br>
+  <mat-list-item>
+    <mat-icon mat-list-icon>image</mat-icon>
+    <div mat-line style="text-align: center; width: 100px; height: 150px;"> <img src="{{data[0].imageUrl}}"> </div>
+  </mat-list-item>
+  <br><br><br>
+  <mat-divider></mat-divider>
+  <mat-list-item>
+    <mat-icon mat-list-icon>close</mat-icon>
+    <div mat-line style="cursor: pointer;" (click)="openLink($event)">Close</div>
+  </mat-list-item>
+</mat-list>

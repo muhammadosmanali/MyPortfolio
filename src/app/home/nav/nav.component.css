@@ -37,6 +37,7 @@ header {
 .logo:hover {
   border-bottom: none !important;
   color: #844685 !important;
+  transition: color 0.3s;
 }
 
 .main-nav li a:hover {
@@ -50,8 +51,7 @@ header {
   background-size: cover;
   background-position: center;
   height: 100vh;
-  background-color: rgba(63, 60, 63, 0.068);
-  filter: grayscale(10%);
+  text-align: center;
 }
 
 .logo {
@@ -73,6 +73,7 @@ header {
   font-size: 70px;
   font-weight: bold;
 }
+
 
 /* Big tablet to 1200px (width smaller than the 1140px row) */
 @media only screen and (max-width: 1200px) {

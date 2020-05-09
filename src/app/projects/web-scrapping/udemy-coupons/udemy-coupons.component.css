@@ -1,0 +1,79 @@
+.mat-grid-list {
+  margin-top: 50px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+
+.mat-grid-tile {
+  color: white;
+  border-radius: 10px;
+}
+
+img {
+  height: 65%;
+}
+
+.mat-grid-tile-header {
+  color: indigo !important;
+  text-align: center;
+  height: 10vh !important;
+  background-color: #f4f4f4 !important;
+}
+
+.mat-grid-tile-footer {
+  text-align: center !important;
+  background-color: #f4f4f4 !important;
+  height: 10vh !important;
+  font-size: 18px;
+}
+
+button {
+  color: indigo !important;
+}
+
+.main-heading {
+  text-align: center;
+  font-size: 30px;
+}
+
+.main-heading:after {
+  display: block;
+  height: 2px;
+  background-color: indigo;
+  content: " ";
+  width: 150px;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+mat-spinner {
+  margin: auto;
+  margin-top: 30px;
+}
+
+.my-pagination {
+  text-align: center;
+}
+
+.my-pag-item {
+  float: left;
+  text-align: center;
+  border: 2px solid indigo;
+  margin-left: 10px;
+  padding-left: 7px;
+  padding-right: 7px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.my-pag-item:hover {
+  background-color: indigo;
+  color: white;
+  transition: background-color 0.3s, color 0.2s;
+}
+
+.active {
+  background-color: indigo;
+  color: white;
+}

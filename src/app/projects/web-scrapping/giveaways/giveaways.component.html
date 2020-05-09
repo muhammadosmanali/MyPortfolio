@@ -1,0 +1,55 @@
+<br /><br /><br />
+
+<h1 class="main-heading">GIVEAWAYS</h1>
+
+<mat-spinner *ngIf="isLoading"></mat-spinner>
+
+<mat-grid-list [cols]="cols" rowHeight="5:5" [gutterSize]="'10px'" #grid>
+  <mat-grid-tile *ngFor="let item of giveawayList">
+    <mat-grid-tile-header
+      style="height: 7vh !important; font-size: 16px !important;"
+    >
+      <h1 style="font-size: 17px; padding: 10px !important; font-weight: bold;">
+        {{ item.name }}
+      </h1>
+    </mat-grid-tile-header>
+    <img src="{{ item.imageUrl }}" />
+    <mat-grid-tile-footer
+      style="height: 7vh !important; font-size: 16px !important;"
+    >
+      <button
+        mat-raised-button
+        color="accent"
+        (click)="openGiveawayDetailBottomSheet(item.name)"
+      >
+        Detail</button
+      >&nbsp;&nbsp;&nbsp;
+      <button
+        mat-flat-button
+        style="padding-left: 5px; padding-right: 5px;"
+        (click)="openGiveawayLinkBottomSheet(item.linkToDetail)"
+      >
+        Get Link
+      </button>
+    </mat-grid-tile-footer>
+  </mat-grid-tile>
+</mat-grid-list>
+
+<div style="text-align: center;" *ngIf="!isLoading">
+  <button
+    class="m-btn"
+    mat-icon-button
+    [ngClass]="{ disabled: isLeftDisabled }"
+  >
+    <mat-icon (click)="onLeftArrow()">keyboard_arrow_left</mat-icon>
+  </button>
+  &nbsp;
+  <button
+    class="m-btn"
+    mat-icon-button
+    [ngClass]="{ disabled: isRightDisabled }"
+  >
+    <mat-icon (click)="onRightArrow()">keyboard_arrow_right</mat-icon>
+  </button>
+</div>
+<br /><br /><br />

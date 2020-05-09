@@ -1,0 +1,50 @@
+<br />
+<br />
+
+<h1 class="main-heading">UDEMY COUPONS</h1>
+
+<mat-spinner *ngIf="isLoading"></mat-spinner>
+
+<mat-grid-list [cols]="cols" rowHeight="5:5" [gutterSize]="'10px'" #grid>
+  <mat-grid-tile *ngFor="let item of couponlist">
+    <mat-grid-tile-header>
+      <h1 style="font-size: 17px; padding: 10px !important; font-weight: bold;text-align: center;">
+        {{ item.heading ? item.heading : "Advertisement" }}
+      </h1>
+    </mat-grid-tile-header>
+    <img src="{{ item.imageUrl }}" />
+    <mat-grid-tile-footer>
+      <button
+        mat-raised-button
+        color="accent"
+        *ngIf="item.day"
+        (click)="openDetailBottomSheet(item.heading)"
+      >
+        Detail</button
+      >&nbsp;&nbsp;&nbsp;
+      <button
+        mat-flat-button
+        style="padding-left: 5px; padding-right: 5px;"
+        (click)="openCouponBottomSheet(item.linkToCoupon)"
+        *ngIf="item.day"
+      >
+        Get Coupon
+      </button>
+    </mat-grid-tile-footer>
+  </mat-grid-tile>
+  <br />
+</mat-grid-list>
+<div class="my-pagination" *ngIf="!isLoading">
+  <ul class="my-pag-list">
+    <li
+      class="my-pag-item"
+      *ngFor="let item of paginationLength"
+      (click)="onSelectItem(item)"
+      [ngClass]="{ active: item == selectedNumber }"
+    >
+      {{ item }}
+    </li>
+  </ul>
+</div>
+
+<br /><br /><br />

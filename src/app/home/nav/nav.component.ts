@@ -9,9 +9,15 @@ export class NavComponent implements OnInit {
   isNav: boolean = false;
   isCheck: boolean;
 
+  isContentload: boolean = false;
+  logo: string;
+
   constructor() { }
 
   ngOnInit(): void {
+    setTimeout(() => {
+      this.isContentload = true;
+    }, 1500);
   }
 
   onHamburgerClick() {
