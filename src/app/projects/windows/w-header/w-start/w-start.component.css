@@ -1,0 +1,68 @@
+.w-box {
+  width: 50%;
+  bottom: 9%;
+  margin-left: 10px;
+  position: fixed;
+}
+
+.box-1 {
+  background-color: rgb(106, 102, 109);
+  color: white;
+  height: 70vh;
+  text-align: center;
+
+}
+
+.box-2 {
+  background-color: rgba(106, 102, 109, 0.705);
+  color: white;
+  height: 70vh;
+  text-align: center;
+}
+
+.user-image {
+  border-radius: 50%;
+}
+
+.user-heading {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.list-heading {
+  text-align: left;
+  cursor: pointer;
+}
+
+
+/* Big tablet to 1200px (width smaller than the 1140px row) */
+@media only screen and (max-width: 1200px) {
+
+}
+
+
+/* small tablet to big tablet: from 768-1023px */
+@media only screen and (max-width: 1023px) {
+  .w-box {
+    width: 70%;
+  }
+}
+
+
+/* small phones to small tablet: form 481-767px */
+@media only screen and (max-width: 767px) {
+  .w-box {
+    width: 85%;
+  }
+}
+
+
+
+/* small phones: from 0-480px*/
+@media only screen and (max-width: 480px) {
+  .w-box {
+    width: 97%;
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+}

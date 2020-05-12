@@ -22,12 +22,14 @@
 
 .my-card-image {
   grid-area: image;
-  background: cover;
+  height: 200px;
+  width: 100%;
 }
 
 .my-card-text {
   grid-area: text;
   /* margin: 25px; */
+  margin-top: -6px;
 }
 
 .my-card-text .date {
@@ -53,11 +55,11 @@
 .detail {
   height: auto;
   width: 100%;
-  background-color: indigo;
+  background-color: white;
   padding: 20px;
   text-align: center;
   border-radius: 20px;
-  color: white
+  color: indigo;
 }
 
 /* .my-card {

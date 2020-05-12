@@ -6,9 +6,9 @@ import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppRoutingModule } from './app-routing.module';
+import { SharedModule } from './shared/shared.moule';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
-import { SharedModule } from './shared/shared.moule';
 import { NavComponent } from './home/nav/nav.component';
 import { ProjectsComponent } from './home/projects/projects.component';
 import { SocialsComponent } from './home/socials/socials.component';
@@ -25,7 +25,7 @@ import { FooterComponent } from './home/footer/footer.component';
     SocialsComponent,
     SkillsComponent,
     ContactFormComponent,
-    FooterComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

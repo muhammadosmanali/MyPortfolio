@@ -1,0 +1,40 @@
+<div class="columns is-mobile w-box">
+  <div class="column is-one-quarter box-1">
+    <img src="assets/logos/windows/user.png" class="user-image" />
+    <h2 class="user-heading animated zoomIn">User</h2>
+    <hr />
+    <div style="margin-top: 100px;"></div>
+    <h2 class="list-heading" routerLink="/explorer">
+      <img
+        src="assets/logos/windows/dark-explorer.png"
+        height="15px"
+        width="20px"
+      />
+      {{ widthStatus ? "" : "File Explorer" }}
+    </h2>
+    <br />
+    <h2 class="list-heading" routerLink="/browser">
+      <img
+        src="assets/logos/windows/dark-chrome.png"
+        height="15px"
+        width="20px"
+      />
+      {{ widthStatus ? "" : "Browser" }}
+    </h2>
+    <br />
+    <h2 class="list-heading" routerLink="/setting">
+      <img
+        src="assets/logos/windows/dark-setting.png"
+        height="15px"
+        width="20px"
+      />
+      {{ widthStatus ? "" : "Setting" }}
+    </h2>
+    <br />
+    <h2 class="list-heading" routerLink="/">
+      <img src="assets/logos/windows/shutdown.png" height="15px" width="20px" />
+      {{ widthStatus ? "" : "Shutdown" }}
+    </h2>
+  </div>
+  <div class="column box-2">CONTENT</div>
+</div>

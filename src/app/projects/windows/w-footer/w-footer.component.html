@@ -1,0 +1,17 @@
+<div class="w-footer">
+  <div class="w-menu">
+    <a class="w-start" [routerLink]="status ? '/windows' : 'start'" (click)="onclick()">
+      <img src="/assets/logos/windows/start.png" class="w-size">
+    </a>
+    <a [routerLink]="'setting'">
+      <img class="internet-explorer w-size" src="/assets/logos/windows/setting.png">
+    </a>
+    <a [routerLink]="'explorer'">
+      <img class="internet-explorer explorer-size" src="/assets/logos/windows/explorer.png" width="35px" height="30px">
+    </a>
+    <a [routerLink]="'browser'">
+      <img class="internet-explorer w-size" src="/assets/logos/windows/chrome.png" width="30px" height="30px">
+    </a>
+  </div>
+  <p class="w-date">{{date | date:'dd/mm/yy h:mm a'}}</p>
+</div>
