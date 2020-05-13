@@ -12,12 +12,13 @@ export class WStartComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    this.getScreenSize();
   }
 
   @HostListener('window:resize', ['$event'])
   getScreenSize(event?) {
     this.screenWidth = window.innerWidth;
-    if (this.screenWidth <= 480) {
+    if (this.screenWidth <= 767) {
       this.widthStatus = true;
     } else {
       this.widthStatus = false;

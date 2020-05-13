@@ -33,6 +33,12 @@ export class ProjectsComponent implements OnInit {
         link: "/windows",
         imageUrl: "assets/logos/windows/background.png",
         detail: "Windows Project"
+      },
+      {
+        title: "HMS",
+        link: "https://github.com/2016CS107/Hospital-Management-System",
+        imageUrl: "assets/images/hms.png",
+        detail: "Hospital Management System"
       }
     ];
   }

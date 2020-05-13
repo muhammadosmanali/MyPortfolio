@@ -4,7 +4,7 @@
     <h2 class="user-heading animated zoomIn">User</h2>
     <hr />
     <div style="margin-top: 100px;"></div>
-    <h2 class="list-heading" routerLink="/explorer">
+    <h2 class="list-heading" routerLink="/explorer" [ngClass]="{'center' : widthStatus}">
       <img
         src="assets/logos/windows/dark-explorer.png"
         height="15px"
@@ -13,7 +13,7 @@
       {{ widthStatus ? "" : "File Explorer" }}
     </h2>
     <br />
-    <h2 class="list-heading" routerLink="/browser">
+    <h2 class="list-heading" routerLink="/browser" [ngClass]="{'center' : widthStatus}">
       <img
         src="assets/logos/windows/dark-chrome.png"
         height="15px"
@@ -22,7 +22,7 @@
       {{ widthStatus ? "" : "Browser" }}
     </h2>
     <br />
-    <h2 class="list-heading" routerLink="/setting">
+    <h2 class="list-heading" routerLink="/setting" [ngClass]="{'center' : widthStatus}">
       <img
         src="assets/logos/windows/dark-setting.png"
         height="15px"
@@ -31,7 +31,7 @@
       {{ widthStatus ? "" : "Setting" }}
     </h2>
     <br />
-    <h2 class="list-heading" routerLink="/">
+    <h2 class="list-heading" routerLink="/" [ngClass]="{'center' : widthStatus}">
       <img src="assets/logos/windows/shutdown.png" height="15px" width="20px" />
       {{ widthStatus ? "" : "Shutdown" }}
     </h2>

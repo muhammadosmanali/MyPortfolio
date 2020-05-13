@@ -32,8 +32,12 @@
 .list-heading {
   text-align: left;
   cursor: pointer;
+  outline: none;
 }
 
+.center {
+  text-align: center !important;
+}
 
 /* Big tablet to 1200px (width smaller than the 1140px row) */
 @media only screen and (max-width: 1200px) {

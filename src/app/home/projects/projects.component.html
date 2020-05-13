@@ -25,7 +25,8 @@
           <h2>{{ item.title }}</h2>
           <br>
           <button class="my-button" (click)="onDetail(item.detail)">Detail</button>&nbsp;
-          <button class="my-button-secondary" [routerLink]="item.link">Visit</button>
+          <button class="my-button-secondary" [routerLink]="item.link" *ngIf="item.link[0] == '/'">Visit</button>
+          <a class="my-button-secondary" href="{{item.link}}"  *ngIf="item.link[0] != '/'" target="_blank">Visit</a>
         </div>
       </div>
     </div>

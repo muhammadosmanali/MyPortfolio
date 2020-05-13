@@ -14,7 +14,7 @@ export class WindowsComponent implements OnInit, OnDestroy {
 
   ngOnInit(): void {
     this.titleService.setTitle('Windows');
-    this._document.getElementById('appFavicon').setAttribute('href', 'assets/images/logo-windows.ico');
+    this._document.getElementById('appFavicon').setAttribute('href', 'assets/images/logo-windows.png');
 
     //Adding styles
     this._document.getElementsByTagName("body")[0].style.backgroundImage = "url(assets/logos/windows/background.png)";

@@ -8,6 +8,7 @@
   cursor: pointer;
   background-color: #400082;
   color: white;
+  outline: none;
 }
 
 .my-button-secondary {
@@ -20,6 +21,7 @@
   cursor: pointer;
   background-color: indianred;
   color: white;
+  outline: none;
 }
 
 .my-button:hover {
